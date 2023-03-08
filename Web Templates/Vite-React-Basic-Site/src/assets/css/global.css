@@ -1,0 +1,63 @@
+@import url(./0.css);
+@import url(./480.css);
+@import url(./720.css);
+@import url(./1080.css);
+@import url(./1440.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;900&display=swap');
+
+:root {
+    font-family: Inter;
+    line-height: 1;
+    font-weight: 400;
+
+    /* Colors */
+    --background: #FFFF;
+    --box-light: #2F971E;
+    --text: #000000;
+    --text-secondary: #787878;
+
+    --primary: #1E2697;
+    --secondary: #F2F2F2;
+    --blue-light-primary: #1e2697;
+
+    background-color: var(--background); 
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Show vertical scrollbar */
+
+  }
+
+/* Width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background);
+}
+  
+  body {
+    position: relative; 
+    text-align: center; /* Center the content */
+    margin-left: auto; /* Center the content */
+    margin-right: auto; /* Center the content */
+    max-width: 1920px; /* Set a max-width */
+    min-height: 100vh;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--text);
+  }
